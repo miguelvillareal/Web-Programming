@@ -1,0 +1,53 @@
+<!--- Miguel Villareal CS 212 Project 3 --->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sign Up Form </title>
+    <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+	</head>
+
+	<body>
+
+		<h1> Project 3 </h1>
+			<h3>Please fill in the form below to create your account.</h3>
+			<h3>Required fields are marked with an asterisk</h3>
+			<br><br>
+
+		<div id="error-display">
+
+			<div id="required-field-error"></div>
+
+			<div id="password-mismatch-error"></div>
+
+			<div id="unmet-password-constraints-error"></div>
+
+			<div id="invalid-email-error"></div>
+
+		</div>
+
+    <br>
+			<form id="project-form" action="index.html" method="post">
+				Username: <span>*</span> <br>
+				<input type="text" id="username" name="username" onfocusout="blankCheck()">
+				<br>
+				Name: <span>*</span> <br>
+				<input type="text" id="name" name="name" onfocusout="blankCheck()">
+				<br>
+				Phone Number: <br>
+				<input type="number" id="phone-number" name="phone-number">
+				<br>
+				Email Address: <span>*</span> <br>
+				<input type="email" id="email" name="email" onfocusout="blankCheck();emailCheck();">
+				<br>
+				Password: <span>*</span> <br>
+				<input type="password" id="password" name="password" onfocusout="blankcheck();passwordCheck();">
+				<br>
+				Password Confirmation: <span>*</span> <br>
+				<input type="password" id="password-confirmation" name="password-confirmation" onfocusout="blankCheck();passwordCheck();">
+				<br>
+				<input id= "submit-btn" type = "submit" onclick = "formCheck()" value = "Submit">
+			</form>
+	</body>
+</html>
