@@ -1,0 +1,17 @@
+/* Miguel Villareal, CS 212, Project 1, DUE: 3-10-19 */
+body {
+	font-family: Georgia;
+	color: #404040;
+}
+
+h1, h2, {
+	font-family: Arial;
+	font-size: 18pt;
+	color: #A4A400;
+	text-decoration: underline;
+}
+
+a{
+	font-weight: bold;
+	color: #0F0A0A;
+}
